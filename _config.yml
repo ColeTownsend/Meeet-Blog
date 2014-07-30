@@ -1,0 +1,12 @@
+# Site settings
+title: Meeet Co
+email: us@meeet.co
+description: "Finish your side projects. Find your next one. Meeet connects developers and designers working on side projects."
+baseurl: "/Meeet-Blog"
+url: "http://blog.meeet.co"
+twitter_username: meeetco
+github_username:  coletownsend
+
+# Build settings
+markdown: kramdown
+permalink: pretty
