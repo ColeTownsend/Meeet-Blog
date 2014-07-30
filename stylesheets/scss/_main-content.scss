@@ -1,0 +1,125 @@
+// Main Content
+.content {
+  @extend %container;
+  margin-bottom: 3em;
+  header[role="sub-nav"] {
+    margin-top: $base-line-height*1.5;
+    margin-bottom: $base-line-height*1.5;
+    h2 {
+      color: #4e596b;
+      font-weight: 400;
+    }
+  }
+   header[role="list-head"] {
+    border-bottom: 1px solid $base-accent-color;
+    margin-bottom: em(14);
+    h3 {
+      font-size: $fs4;
+      display: inline-block;
+      line-height: 1em;
+      font-weight: normal;
+    }
+    a.all-results, a.pull-right {
+      text-align: right;
+      float: right;
+      display: inline-block;
+      position: relative;
+      top: 8px;
+      font-size: $fs6;
+      @include link-hover($base-accent-color,10, glow)
+    }
+   }
+  .center {
+    @include span-columns(5);
+    @include shift(2.5);
+    @include clearfix;
+  }
+  .container {
+    @extend %container;
+  }
+  aside {
+    background:$white;
+    @include span-columns(3);
+    @include omega();
+    @include shift(.5);
+    @include user-select(); // defaults to none, which turns it off
+    min-height: 26em;
+    @extend %bordered;
+    padding: 0;
+    p {
+      line-height: 1.25;
+    }
+    .modal-toggle button, .modal-toggle .button {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-top: 1.5*$base-line-height;
+    }
+    .filters {
+      padding: 0 1em 1em 1em;
+    }
+    .text {
+      padding: 1em;
+    }
+    &.noborder {
+      border-width: 0px !important;
+      input {
+        border: 1px solid $base-border-color !important;
+        :active, &:focus {
+          outline: none;
+          border: none;
+          border-bottom: 1px solid $base-accent-color !important;
+        }
+      }
+    }
+  }
+  // changed to be a bit more semantic, .articles with article seems misleading as their just snippets
+  article {
+    @include span-columns(6.5);
+    min-height: 26em;
+    &.outlined { 
+      @extend %container;
+      @extend %bordered;
+    }
+    &.full-width {
+      @include span-columns(10);
+    }
+    .grid-3 {
+      @include span-columns(1.75 of 6.5); 
+    }
+    .grid-7 {
+      @include span-columns(4.5 of 6.5);
+      @include omega();
+      @include shift(.25);
+      .filter-holder {
+        margin-top: 1em;
+      }
+    }
+    section {
+      margin-bottom: 1em;
+      min-height: 6em;
+      @extend %bordered;
+      &:last-of-type {
+        margin-bottom: $base-line-height * 1.5;
+      }
+      p {
+        margin-bottom: .5rem;
+      }
+    }
+    .see-more {
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 2em;
+      }
+    }
+    .advance-backward {
+      float: left;
+      margin-top: 2em;
+    }
+    .advance-forward {
+      float: right;
+      margin-top: 2em;
+    }
+  }
+}

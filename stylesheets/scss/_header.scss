@@ -1,0 +1,81 @@
+header.main {
+  padding: 20px 0 20px 0;
+  background: $white;
+  border-bottom: 1px solid $base-border-color;
+  position: relative;
+  @include user-select(); // defaults to none, which turns it off
+  .inner {
+    @extend %container;
+  }
+  // nested child elements
+  .logo {
+    @include span-columns(1);
+  }
+  .links {
+    @include span-columns(5.5);
+    height: em(32);
+    a {
+      @extend %vertical-align;
+      @include link-hover($light-black, 10, shadow);
+      display: inline-block;
+      margin-right: em(24, 14);
+      font-size: $fs5;
+    }
+  }
+  .buttons {
+    @include span-columns(3.5);
+    overflow: visible;
+    margin-right: 0;
+    float: right;
+    text-align: right;
+    .activity {
+      position: relative;
+      display: inline-block;
+    }
+    .notifications {
+      @include button-default($blue, 16px, 32px, solid);
+      min-width: 0;
+      width: 32px;
+      position: relative;
+    }
+    button {
+      @include button-default($blue, 16px, 32px, solid);
+      font-weight: 300;
+      -webkit-font-smoothing: sub-pixel-antialias;
+      min-width: 7rem;
+      &.avatar {
+        background: transparent;
+        height: 32px;
+        width: 32px;
+        min-width: 0;
+        padding: 0;
+        background-size: 32px;
+        background-repeat: no-repeat;
+      }
+      &.notification-btn {
+        background: transparent;
+        height: 32px;
+        width: 32px;
+        min-width: 0;
+        padding: 0;
+        background-size: 32px;
+        background-repeat: no-repeat;
+        border-width: 0;
+      }
+    }
+    .profile {
+      padding: 0;
+    }
+    &.buttons-logged-out a {
+      @include link-hover($light-black, 10);
+      margin-left: em(24, 14);
+      font-size: $fs5;
+      &:last-of-type {
+        padding-top: .25rem;
+      }
+    }
+  }
+  .buttons-logged-in a, .buttons-logged-in .activity {
+    margin-left: 1rem;
+  }
+}

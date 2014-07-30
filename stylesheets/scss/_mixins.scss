@@ -1,0 +1,161 @@
+// links
+/////////////////////////////////////////
+@mixin link-hover($link-color: $accent, $darken: 10, $type: shadow) {
+  color: $link-color;
+  @include transition(color .1s $ease-in-out-quad);
+  
+  // with text shadow
+  @if $type == shadow {
+    @include transition(text-shadow .1s $ease-in-out-quad);
+  }
+
+  @if $type == underline {
+    background: -webkit-linear-gradient($link-color, $link-color), -webkit-linear-gradient($link-color, $link-color), -webkit-linear-gradient($link-color, $link-color);
+    background-size: 0.04em 1px, 0.04em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.04em 0 $base-body-color, -0.04em 0 $base-body-color, 0 0.04em $base-body-color, 0 -0.06em $base-body-color, 0.08em 0 $base-body-color, -0.08em 0 $base-body-color, 0.08em 0 $base-body-color, -0.10em 0 $base-body-color, 0.12em 0 $base-body-color, -0.12em 0 $base-body-color, 0.14em 0 $base-body-color, -0.14em 0 $base-body-color;
+    background-position-y: 96%, 96%, 96%;
+    background-position-x: 0%, 100%, 0%; 
+  }
+  
+  // on hover
+  &:hover {
+    color: darken($link-color, $darken);
+    @include transition(color .1s $ease-in-out-quad);
+    @include transition(text-shadow .1s $ease-in-out-quad);
+    
+    // with text shadow
+    @if $type == shadow {
+      text-shadow: 0 0 1px transparentize(darken($link-color, $darken), .90);
+    }
+
+    // with fancy underline
+    @if type == underline {
+      $hover-link-color: darken($link-color, $darken);
+      color: darken($hover-link-color, $darken);
+      background: -webkit-linear-gradient($base-body-color, $base-body-color), -webkit-linear-gradient($base-body-color, $base-body-color), -webkit-linear-gradient($hover-link-color, $hover-link-color);
+    }
+  }
+}
+
+// flat button
+/////////////////////////////////////////
+@mixin button-default($color: $base-accent-color, $border-radius: $base-border-radius, $height: 32px, $type: solid) {
+  border: none;
+  -webkit-border-radius: $border-radius;
+  border-radius: $border-radius;
+  color: $color;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: normal;
+  font-family: $sans-serif;
+  font-size: $fs5;
+  height: $height;
+  line-height: $height - 4px;
+  min-width: 96px;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  background-clip: padding-box;
+  cursor: pointer;
+  padding: 0 .5rem;
+
+  // solid
+  @if $type == solid {
+    background: $color;
+    color: $white;
+    @include transition(background .1s $ease-in-out-quad);
+    font-weight: 300;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    
+    // hover
+    &:hover {
+      background: darken($color, 12);
+      @include transition(background .1s $ease-in-out-quad);
+    }  
+    // active
+    &:active {
+      background: darken($color, 8);
+      @include transition(background .1s $ease-in-out-quad);
+    }
+    // disabled
+    &:disabled {
+      background: grayscale($color); 
+      cursor: pointer;
+    }
+  }
+
+  @if $type == outline {
+    border: 1px solid lighten($color, 8);
+    color: $color;
+    line-height: $height - 2px;
+    @include transition(background .1s $ease-in-out-quad);
+    background: none;
+    // hover
+    &:hover {
+      color: darken($color, 16);
+      border-color: darken($color, 4);
+      @include transition(border-color .1s $ease-in-out-quad);
+      @include transition(color .1s $ease-in-out-quad);
+    }
+    &:active {
+      color: darken($color, 16);
+      border-color: darken($color, 6);
+      @include transition(border-color .1s $ease-in-out-quad);
+      @include transition(color .1s $ease-in-out-quad);
+    }  
+  }
+}
+
+// stripes!
+/////////////////////////////////////////
+@function old($direction) {
+  $keywords: (to bottom, to left, to top, to right, 
+            to bottom right, to bottom left, 
+            to top left, to top right), 
+  (top, right, bottom, left, 
+  top left, top right, 
+  bottom right, bottom left);
+  
+  @for $i from 1 through length(nth($keywords,1)) {
+    @if $direction == nth(nth($keywords, 1), $i) {
+      @return nth(nth($keywords, 2), $i);
+    }
+  }
+  @return 90deg - unquote($direction);
+}
+
+@function stripes($colors, $direction: "to bottom", $syntax: "new") {  
+    //$colors   : if(type-of($colors) != 'list', ($colors), $colors);
+    $stripes  : 100% / length($colors);
+    $firstCol : nth($colors, 1);
+    $auto     : not(type-of($firstCol) == list); /* Thanks Paul d'Aoust */
+    $gradient : ();
+    
+    @for $i from 1 through length($colors) {
+      $item : nth($colors, $i);
+      $dump : ();
+
+      @if $auto == true {
+        $dump : $item $stripes * ($i - 1), $item $stripes * $i;
+      }
+      
+      @else {
+                
+        @if $i > 1 {
+          $prev : nth($colors, $i - 1);
+          $dump : $dump, nth($item, 1) nth($prev, 2);
+        }
+        $dump : $dump, $item;
+        
+      }
+      
+      $gradient : join($gradient, $dump, comma);
+
+    }
+    @if($syntax == "old") {
+      $direction: old($direction);
+      @return #{"-webkit-linear-gradient(" #{$direction} ", " #{$gradient} ")"};
+    }
+    @return #{"linear-gradient(" #{$direction} ", " #{$gradient} ")"};
+}
+

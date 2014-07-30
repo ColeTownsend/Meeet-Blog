@@ -1,0 +1,178 @@
+// dropdown
+.dropdown {
+  @include border-top-radius($base-border-radius);
+  @include border-bottom-radius($base-border-radius);
+  $dW: 14em;
+  // clearing out everything
+  text-align: left;
+  display: none;
+  float: none;
+  // back to styling
+  border: 1px solid $base-accent-color;
+  background: $base-accent-color;
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  z-index: 100;
+  width: $dW;
+  .dropdown-header {
+    display: block;
+    text-transform: capitalize;
+    width: 100%;
+    padding: em(6, 14);
+    line-height: em(20, 14);
+    font-weight: 600;
+    color: $base-body-color;
+    font-size: $fs5;
+    position: relative;
+    &:before {
+      $tS: 1rem; // size of triangle
+      content: '';
+      @include triangle($tS, $blue, up);
+      position: absolute;
+      top: -$tS;
+      right: .5*$tS; 
+    }
+  }
+  ul.dropdown-items {
+    @include border-bottom-radius($base-border-radius);
+    background: $white;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    padding: em(9);
+    padding-bottom: 0;
+    margin: 0;
+    li {
+      width: 100%;
+      height: auto;
+      min-height: em(28, 14);
+      border-bottom: 1px solid $base-border-color;
+      display: block;
+      font-size: $fs6;
+      color: $base-font-color;
+      width: 100%;
+      padding: em(6, 14) 0 em(6, 14) 0;
+      margin-left: 0;
+      line-height: 16px;
+      a {
+        @include link-hover($base-link-color, 10, shadow);
+        display: block;
+        font-size: $fs6;
+        color: $base-font-color;
+        width: 100%;
+        margin-left: 0;
+      }
+      span {
+        font-size: $fs6;
+        color: $base-font-color;
+        width: 100%;
+        display: block;
+        margin-left: 0;
+      }
+      &:last-of-type {
+        text-align: right;
+        border-bottom: none;
+        a {
+          font-size: $fs6;
+          padding-bottom: 0;
+          padding-right: 0;
+          padding-left: 0;
+          @include link-hover($base-accent-color, 10, shadow);
+        }
+      }
+    }
+  }
+}
+
+.center {
+  @include span-columns(5);
+  @include shift(2.5);
+  @include clearfix;
+}
+
+
+// tags
+.tag, %tag {
+  @include button-default($medium-gray, 16px, 24px, outline);
+  color: $medium-gray;
+  text-align: center;
+  text-decoration: none;
+  margin-right: .5rem;
+  font-size: $fs5;
+  min-width: 3rem;
+  position: relative;
+  letter-spacing: 0 !important;
+}
+
+
+//.tag:first-letter {
+//  text-transform: capitalize;
+//}
+
+.profile-tags > .tag {
+  @extend %tag;
+  min-width: 3rem;
+  position: relative;
+  line-height: 22px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: .5em;
+  margin-bottom: .5em;
+  @include transition(background .1s $ease-in-out-quad);
+  &:hover {
+    background: $medium-gray;
+    color: $white;
+    @include transition(background .1s $ease-in-out-quad);
+    border: 1px solid $medium-gray;
+    min-width: 3rem;
+    line-height: 22px;
+    color: $medium-gray !important;
+    letter-spacing: 0 !important;
+    &:before, &:after {
+      @include transition(background .1s $ease-in-out-quad);
+      content: '';
+      width: 2px; 
+      height: 12px;
+      @include transform(rotate(45deg));
+      position: absolute;
+      right: 50%;
+      top: 25%;
+      background: white;
+    }
+    &:after {
+      @include transform(rotate(-45deg));
+    }
+  }
+}
+
+//.profile-tag:first-letter {
+//  text-transform: capitalize;
+//}
+
+.notify {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: $fs5;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  &.notify-success {
+    background: $green;
+    color: $base-body-color;
+  }
+  &.notify-oops {
+    background: $red;
+    color: $base-body-color;
+  }
+}
+
+.list-feed + aside {
+  margin-top: 2rem;
+}
+
+// grid 
+.full-col {
+  @include span-columns(10);
+}

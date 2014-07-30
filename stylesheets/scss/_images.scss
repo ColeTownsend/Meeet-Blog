@@ -1,0 +1,27 @@
+img {
+	&.full {
+		width: 100%;
+		height: auto;
+		-webkit-border-radius: 100%;
+          border-radius: 100%;
+	}
+}
+
+.avatar {
+  -webkit-box-shadow: 0 0 0 1px darken($base-border-color, 5%);
+          box-shadow: 0 0 0 1px darken($base-border-color, 5%);
+  background: transparent;
+  height: 32px;
+  width: 32px;
+  min-width: 0;
+  @include border-top-radius(16px);
+  @include border-bottom-radius(16px);
+  padding: 0;
+  background-size: 32px;
+  background-repeat: no-repeat;
+  //background: stripes($striping, to top left);
+  &.full {
+    -webkit-box-shadow: 0 0 0 1px darken($base-border-color, 10%);
+      box-shadow: 0 0 0 1px darken($base-border-color, 10%);
+  }
+}

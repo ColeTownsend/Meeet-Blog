@@ -1,0 +1,41 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  border-top: 1px solid darken($base-border-color, 5);
+  background: $warm-gray;
+  .inner {
+    @extend %container;
+    padding: 2em 0;
+    .logo {
+      @include span-columns(1);
+    }
+    .links {
+      @include span-columns(4.404);
+      height: em(32);
+      a {
+        @extend %vertical-align;
+        @include link-hover($darker-gray, 10, shadow);
+        display: inline-block;
+        margin-right: em(24, 16);
+        font-size: $fs5;
+        &:last-of-type {
+          margin-right: 0;
+        } 
+      }
+      &.right {
+        text-align: right;
+        margin-right: 0;
+        float: right;
+      }
+    }
+    small {
+      @include span-columns(10);
+      text-align: center;
+      margin-top: 2em;
+      color: $medium-gray;
+    }
+  }
+}

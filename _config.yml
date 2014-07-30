@@ -1,12 +1,40 @@
-# Site settings
-title: Meeet Co
+title: "Meeet Co"
+name: "Collaboration is key."
+description: ""
+author: "Cole Townsend + Noah Buscher"
 email: us@meeet.co
-description: "Finish your side projects. Find your next one. Meeet connects developers and designers working on side projects."
+twitter: twnsndco
+version: 0.1
 baseurl: "/Meeet-Blog"
 url: "http://blog.meeet.co"
-twitter_username: meeetco
-github_username:  coletownsend
 
-# Build settings
+future: true
+
+
+
+images_url: /images/inline/
+image:
+  source: images/inline/
+
+# Production
+# ============================================================
+exclude: ['README.md', '.gitignore', 'templates', 'node_modules', '*.sublime-workspace', '*.sublime-project', 'package.json', '*.codekit', 'Procfile','ngrok', 'Gemfile', 'Gemfile.lock', 'gulpfile.js', '.sass_cache','Rakefile']
+include:  ['.htaccess']
+
+timezone:    America/New_York
+future:      true
+highlighter:    true
 markdown: kramdown
+
 permalink: pretty
+
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
