@@ -17,8 +17,16 @@
 }
 
 .post {
+	h1 {
+		font-weight: 100;
+	}
 	article {
 		@extend %bordered;
+		padding: $base-line-height*2;
+		@include span-columns(10);
+		a {
+			@include link-hover($base-link-color, 10, underline);
+		}
 	}
 	ul {
 		margin: $base-line-height/2 0;
