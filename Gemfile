@@ -4,6 +4,7 @@ gem 'jekyll'
 
 gem 'rake'
 gem 'rdiscount'
+gem 'kramdown'
 
 gem 'jekyll-assets'
 

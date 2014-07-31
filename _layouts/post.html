@@ -10,6 +10,9 @@
       </header>
       <article>
         {{ content }}
+        <!-- Twitter -->
+        <br>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="meeetco" data-count="none" data-url="{{ site.url }}{{ post.url }}">Tweet</a>
       </article>
       <aside>
         <div class="text">
@@ -20,6 +23,7 @@
     </div>
 
     {% include footer.html %}
-
+    
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </body>
 </html>

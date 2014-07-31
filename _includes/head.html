@@ -6,15 +6,15 @@
     <meta name="description" content="{{ site.description }}">
 
     <!-- Favicons -->
-    <link rel="icon" href="{{ "/images/favicons/Meeet-32x32.png" | prepend: site.baseurl }}">
+    <link rel="icon" href="{{ "/images/favicons/Meeet-32x32.png" | prepend: site.url }}">
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html',''| prepend: site.url }}">
     
     <!-- Scripts in Head -->
 
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/stylesheets/css/i.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/stylesheets/css/i.css" | prepend: site.url }}">
 </head>
 
 <body class="{{ page.layout }}">
@@ -22,12 +22,12 @@
     <div class="inner">
       <div class="logo">
         <a href="{{ site.url }}">
-          <img src="{{ "/images/logos/logo-gradient.svg" | prepend: site.baseurl }}" alt="" id="logo">
+          <img src="{{ "/images/logos/logo-gradient.svg" | prepend: site.url }}" alt="" id="logo">
         </a>
       </div>
       <div class="links">
         <a href="{{ site.url }}">Home</a>
-        <a href="/updates">Updates</a>
+        <a href="{{ site.url }}/updates">Updates</a>
       </div>
     </div>
     

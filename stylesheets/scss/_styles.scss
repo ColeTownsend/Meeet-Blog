@@ -6,6 +6,9 @@ html {
 }
 
 body {
+	&.home {
+		background:$off-white;
+	}
 	background: $base-body-color;
 }
 

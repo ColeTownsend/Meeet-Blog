@@ -17,6 +17,9 @@
 }
 
 .post {
+	article {
+		@extend %bordered;
+	}
 	ul {
 		margin: $base-line-height/2 0;
 		margin-left: $base-line-height;
