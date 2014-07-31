@@ -39,7 +39,7 @@
   border: 1px solid $base-border-color;
   @include border-top-radius($base-border-radius);
   @include border-bottom-radius($base-border-radius);
-  padding: 1em;
+  padding: 1rem;
   // subtle drop shadow
   -moz-box-shadow: $base-box-shadow;
   box-shadow: $base-box-shadow;
