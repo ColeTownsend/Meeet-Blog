@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <div class="content">
+      <header role="sub-nav">
+        <hgroup>
+          <h2>Top Cuts</h2>
+        </hgroup>
+      </header>
+      <article>
+        {% for post in site.categories['cuts'] %}
+          <section class="post-listing">
+            <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+            <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+            <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 120 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 160 }}{% endif %}</p>
+          </section>
+        {% endfor %}
+      </article>
+      <aside>
+        <div class="text">
+          <p>{{ site.data.updates }}</p>
+          <p>If you have any questions, feel free to <a href="mailto:us@meeet.co">get in touch</a>.</p>
+        </div>
+      </aside>
+    </div>
+
+    {% include footer.html %}
+
+    </body>
+</html>
