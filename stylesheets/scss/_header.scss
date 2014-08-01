@@ -4,6 +4,17 @@ header.main {
   border-bottom: 1px solid $base-border-color;
   position: relative;
   @include user-select(); // defaults to none, which turns it off
+  // quick mobile fix
+  @include media($small) {
+    .links {
+      @include span-columns(5);
+      @include omega();
+      a {
+        text-align: right;
+        float: right;
+      }
+    }
+  }
   .inner {
     @extend %container;
   }

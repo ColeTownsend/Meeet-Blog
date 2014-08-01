@@ -33,6 +33,12 @@
     @include span-columns(5);
     @include shift(2.5);
     @include clearfix;
+    @include media($small) {
+      display: block;
+      @include shift(0);
+      @include span-columns(6 of 6);
+    }
+
   }
   .container {
     @extend %container;
@@ -46,6 +52,12 @@
     min-height: 26em;
     @extend %bordered;
     padding: 0;
+    // mobile
+    @include media($small) {
+      @include shift(0);
+      @include span-columns(6 of 6);
+      min-height: 12em;
+    }
     p {
       line-height: 1.25;
     }
@@ -77,6 +89,13 @@
   article {
     @include span-columns(6.5);
     min-height: 26em;
+    // mobile
+    @include media($small) {
+      display: block;
+      @include shift(0);
+      @include span-columns(6 of 6);
+      min-height: 12em;
+    }
     &.outlined { 
       @extend %container;
       @extend %bordered;

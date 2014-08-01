@@ -65,12 +65,16 @@
 .post {
 	// mobile
 	@include media($small) {
-		font-size: $fs4;
 		background: $white;
-		// remove border
-		article {
+	}
+	article {
+		@include media($small) {
+			padding: 0;
 			border: none;
 			box-shadow: none;
+			p {
+				font-size: $fs4;
+			}
 		}
 	}
 }
@@ -94,10 +98,16 @@
 	.author-mug {
 		min-height: 8rem;
 		@include span-columns(2 of 10);
+		@include media($small) {
+			@include span-columns(1 of 6);
+		}
 	}
 	.author-info {
 		min-height: 8rem;
 		@include span-columns(5 of 10);
+		@include media($small) {
+			@include span-columns(5 of 6);
+		}
 		@include omega();
 		position: relative;
 		h3 {
@@ -108,5 +118,18 @@
 	.author-bio {
 		font-size: $fs5;
 		margin-bottom: .5em;
+	}
+}
+
+.mobile-show {
+	display: none;
+	@include media($small) {
+		display: block;
+	}
+}
+
+.mobile-hidden {
+	@include media($small) {
+		display: none;
 	}
 }

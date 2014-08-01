@@ -1583,6 +1583,18 @@ header.main {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+  @media screen and (max-width: 480px) {
+    header.main .links {
+      float: left;
+      display: block;
+      margin-right: 3.44828%;
+      width: 82.75862%;
+      margin-right: 0; }
+      header.main .links:last-child {
+        margin-right: 0; }
+      header.main .links a {
+        text-align: right;
+        float: right; } }
   header.main .logo {
     float: left;
     display: block;
@@ -1806,6 +1818,16 @@ header.main {
       display: table; }
     .content .center:after {
       clear: both; }
+    @media screen and (max-width: 480px) {
+      .content .center {
+        display: block;
+        margin-left: 0%;
+        float: left;
+        display: block;
+        margin-right: 3.44828%;
+        width: 100%; }
+        .content .center:last-child {
+          margin-right: 0; } }
   .content aside {
     background: white;
     float: left;
@@ -1822,6 +1844,16 @@ header.main {
     padding: 0; }
     .content aside:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      .content aside {
+        margin-left: 0%;
+        float: left;
+        display: block;
+        margin-right: 3.44828%;
+        width: 100%;
+        min-height: 12em; }
+        .content aside:last-child {
+          margin-right: 0; } }
     .content aside p {
       line-height: 1.25; }
     .content aside .modal-toggle button, .content aside .modal-toggle .button {
@@ -1849,6 +1881,17 @@ header.main {
     min-height: 26em; }
     .content article:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      .content article {
+        display: block;
+        margin-left: 0%;
+        float: left;
+        display: block;
+        margin-right: 3.44828%;
+        width: 100%;
+        min-height: 12em; }
+        .content article:last-child {
+          margin-right: 0; } }
     .content article.full-width {
       float: left;
       display: block;
@@ -1978,11 +2021,15 @@ header.main {
 
 @media screen and (max-width: 480px) {
   .post {
-    font-size: 16px;
-    background: white; }
-    .post article {
-      border: none;
-      box-shadow: none; } }
+    font-size: 14px;
+    background: white; } }
+@media screen and (max-width: 480px) {
+  .post article {
+    padding: 0;
+    border: none;
+    box-shadow: none; }
+    .post article p {
+      font-size: 16px; } }
 
 .author-card {
   border: none;
@@ -2021,6 +2068,14 @@ header.main {
     width: 18.36735%; }
     .author-card .author-mug:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      .author-card .author-mug {
+        float: left;
+        display: block;
+        margin-right: 3.44828%;
+        width: 13.7931%; }
+        .author-card .author-mug:last-child {
+          margin-right: 0; } }
   .author-card .author-info {
     min-height: 8rem;
     float: left;
@@ -2031,12 +2086,30 @@ header.main {
     position: relative; }
     .author-card .author-info:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      .author-card .author-info {
+        float: left;
+        display: block;
+        margin-right: 3.44828%;
+        width: 82.75862%; }
+        .author-card .author-info:last-child {
+          margin-right: 0; } }
     .author-card .author-info h3 {
       margin-top: 0;
       margin-bottom: .5em; }
   .author-card .author-bio {
     font-size: 14px;
     margin-bottom: .5em; }
+
+.mobile-show {
+  display: none; }
+  @media screen and (max-width: 480px) {
+    .mobile-show {
+      display: block; } }
+
+@media screen and (max-width: 480px) {
+  .mobile-hidden {
+    display: none; } }
 
 img.full {
   width: 100%;
