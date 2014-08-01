@@ -9,17 +9,21 @@
         </hgroup>
       </header>
       <article>
+        {% if page.categories contains 'cuts' %}
+          <img class="top-cuts" src="{{ site.url }}/images/logos/meeet-party-logo.png" alt="Top Cuts!">
+        {% endif %}
         {{ content }}
         <!-- Twitter -->
         <br>
         <a href="https://twitter.com/share" class="twitter-share-button" data-via="meeetco" data-count="none" data-url="{{ site.url }}{{ post.url }}">Tweet</a>
+        {% if page.author == 'noah' %}
+        <hr class="card-break">
+        {% include noah-card.html %}
+        {% elsif page.author == 'cole'  %}
+        <hr class="card-break">
+        {% include cole-card.html %}
+        {% endif %}
       </article>
- <!--      <aside>
-        <div class="text">
-          <p>{{ site.data.updates }}</p>
-          <p>If you have any questions, feel free to <a href="mailto:us@meeet.co">get in touch</a>.</p>
-        </div>
-      </aside> -->
     </div>
 
     {% include footer.html %}

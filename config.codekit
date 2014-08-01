@@ -2,6 +2,15 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "17018",
 "files": {
+	"\/_includes\/cole-card.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_includes\/cole-card.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_includes\/footer.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -20,16 +29,14 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_includes\/header.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
+	"\/_includes\/noah-card.html": {
+		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_includes\/header.jade",
-		"outputAbbreviatedPath": "\/header.html",
+		"inputAbbreviatedPath": "\/_includes\/noah-card.html",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
+		"outputPathIsSetByUser": 0
 		},
 	"\/_layouts\/categories.html": {
 		"fileType": 8192,
@@ -81,8 +88,8 @@
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/_posts\/2014-07-28-Working-in-Community.md",
 		"outputAbbreviatedPath": "\/_posts\/2014-07-28-Working-in-Community.html",
 		"outputPathIsOutsideProject": 0,
@@ -111,6 +118,83 @@
 		"outputAbbreviatedPath": "\/about.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/images\/avatar\/cole.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 223895,
+		"inputAbbreviatedPath": "\/images\/avatar\/cole.jpg",
+		"outputAbbreviatedPath": "\/images\/avatar\/cole.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatar\/cole.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20075,
+		"inputAbbreviatedPath": "\/images\/avatar\/cole.png",
+		"outputAbbreviatedPath": "\/images\/avatar\/cole.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatar\/cole@1x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72402,
+		"inputAbbreviatedPath": "\/images\/avatar\/cole@1x.png",
+		"outputAbbreviatedPath": "\/images\/avatar\/cole@1x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatar\/default 2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7193,
+		"inputAbbreviatedPath": "\/images\/avatar\/default 2.png",
+		"outputAbbreviatedPath": "\/images\/avatar\/default 2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatar\/noah.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55586,
+		"inputAbbreviatedPath": "\/images\/avatar\/noah.jpg",
+		"outputAbbreviatedPath": "\/images\/avatar\/noah.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatar\/noah.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68653,
+		"inputAbbreviatedPath": "\/images\/avatar\/noah.png",
+		"outputAbbreviatedPath": "\/images\/avatar\/noah.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatar\/noah@1x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68653,
+		"inputAbbreviatedPath": "\/images\/avatar\/noah@1x.png",
+		"outputAbbreviatedPath": "\/images\/avatar\/noah@1x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/images\/favicons\/Meeet-16x16.png": {
 		"fileType": 32768,
@@ -156,13 +240,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/gravatar\/default.png": {
+	"\/images\/logos\/meeet-party-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7193,
-		"inputAbbreviatedPath": "\/images\/gravatar\/default.png",
-		"outputAbbreviatedPath": "\/images\/gravatar\/default.png",
+		"initialSize": 16721,
+		"inputAbbreviatedPath": "\/images\/logos\/meeet-party-logo.png",
+		"outputAbbreviatedPath": "\/images\/logos\/meeet-party-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/logos\/meeet-party-logo@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35142,
+		"inputAbbreviatedPath": "\/images\/logos\/meeet-party-logo@2x.png",
+		"outputAbbreviatedPath": "\/images\/logos\/meeet-party-logo@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1652,7 +1747,7 @@
 	"iconImageName": "\/images\/favicons\/Meeet-256x256.png"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, ff 17, opera 12.1",
@@ -1780,7 +1875,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerAddress": "http:\/\/localhost:4000",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathRelativePath": "",
