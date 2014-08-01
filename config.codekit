@@ -128,7 +128,7 @@
 		"outputAbbreviatedPath": "\/images\/avatar\/cole.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/avatar\/cole.png": {
 		"fileType": 32768,
@@ -139,7 +139,7 @@
 		"outputAbbreviatedPath": "\/images\/avatar\/cole.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/avatar\/cole@1x.png": {
 		"fileType": 32768,
@@ -150,7 +150,7 @@
 		"outputAbbreviatedPath": "\/images\/avatar\/cole@1x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/avatar\/default 2.png": {
 		"fileType": 32768,
@@ -161,7 +161,7 @@
 		"outputAbbreviatedPath": "\/images\/avatar\/default 2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/avatar\/noah.jpg": {
 		"fileType": 16384,
@@ -172,7 +172,7 @@
 		"outputAbbreviatedPath": "\/images\/avatar\/noah.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/avatar\/noah.png": {
 		"fileType": 32768,
@@ -183,7 +183,7 @@
 		"outputAbbreviatedPath": "\/images\/avatar\/noah.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/avatar\/noah@1x.png": {
 		"fileType": 32768,
@@ -194,7 +194,7 @@
 		"outputAbbreviatedPath": "\/images\/avatar\/noah@1x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/favicons\/Meeet-16x16.png": {
 		"fileType": 32768,
@@ -205,7 +205,7 @@
 		"outputAbbreviatedPath": "\/images\/favicons\/Meeet-16x16.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/favicons\/Meeet-256x256.png": {
 		"fileType": 32768,
@@ -216,7 +216,7 @@
 		"outputAbbreviatedPath": "\/images\/favicons\/Meeet-256x256.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/favicons\/Meeet-32x32.png": {
 		"fileType": 32768,
@@ -227,7 +227,7 @@
 		"outputAbbreviatedPath": "\/images\/favicons\/Meeet-32x32.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/favicons\/Meeet-48x48.png": {
 		"fileType": 32768,
@@ -238,7 +238,7 @@
 		"outputAbbreviatedPath": "\/images\/favicons\/Meeet-48x48.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/logos\/meeet-party-logo.png": {
 		"fileType": 32768,
@@ -249,7 +249,7 @@
 		"outputAbbreviatedPath": "\/images\/logos\/meeet-party-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/logos\/meeet-party-logo@2x.png": {
 		"fileType": 32768,
@@ -260,7 +260,7 @@
 		"outputAbbreviatedPath": "\/images\/logos\/meeet-party-logo@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/index.html": {
 		"fileType": 8192,
