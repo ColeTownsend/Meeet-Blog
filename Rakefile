@@ -3,6 +3,7 @@ require 'yaml'
 require 'fileutils'
 require 'rbconfig'
 require "rubygems"
+require 'chronic'
 
 # == Configuration =============================================================
 
@@ -102,107 +103,21 @@ task :ship do
   puts "Pushed latest changes to GitHub!"
 end
 
-# == Helpers ===================================================================
-
-# Execute a system command
-def execute(command)
-  system "#{command}"
-end
-
-# Chech the title
-def check_title(title)
-  if title.nil? or title.empty?
-    raise "Please add a title to your file."
-  end
-end
-
-# Transform the filename and date to a slug
-def transform_to_slug(title, extension)
-  characters = /("|'|!|\?|:|\s\z)/
-  whitespace = /\s/
-  "#{title.gsub(characters,"").gsub(whitespace,"-").downcase}.#{extension}"
-end
-
-# Read the template file
-def read_file(template)
-  File.read(template)
-end
-
-# Save the file with the title in the YAML front matter
-def write_file(content, title, directory, filename)
-  parsed_content = "#{content.sub("title:", "title: \"#{title}\"")}"
-  File.write("#{directory}/#{filename}", parsed_content)
-  puts "#{filename} was created in '#{directory}'."
-end
-
-# Create the file with the slug and open the default editor
-def create_file(directory, filename, content, title, editor)
-  FileUtils.mkdir(directory) unless File.exists?(directory)
-  if File.exists?("#{directory}/#{filename}")
-    raise "The file already exists."
+task :post do
+  OptionParser.new.parse!
+  ARGV.shift
+  title = ARGV.join(' ')
+ 
+  path = "_posts/#{Date.today}-#{title.downcase.gsub(/[^[:alnum:]]+/, '-')}.md"
+  
+  if File.exist?(path)
+    puts "[WARN] File exists - skipping create"
   else
-    write_file(content, title, directory, filename)
-    if editor && !editor.nil?
-      sleep 1
-      execute("#{editor} #{directory}/#{filename}")
+    File.open(path, "w") do |file|
+      file.puts YAML.dump({'layout' => 'post', 'published' => false, 'title' => title})
+      file.puts "---"
     end
   end
-end
-
-# Get the "open" command
-def open_command
-  if RbConfig::CONFIG["host_os"] =~ /mswin|mingw/
-    "start"
-  elsif RbConfig::CONFIG["host_os"] =~ /darwin/
-    "open"
-  else
-    "xdg-open"
-  end
-end
-
-# == Tasks =====================================================================
-
-# rake post["Title"]
-desc "Create a post in _posts"
-task :post, :title do |t, args|
-  title = args[:title]
-  template = CONFIG["post"]["template"]
-  extension = CONFIG["post"]["extension"]
-  editor = CONFIG["editor"]
-  check_title(title)
-  filename = "#{DATE}-#{transform_to_slug(title, extension)}"
-  content = read_file(template)
-  create_file(POSTS, filename, content, title, editor)
-end
-
-# rake draft["Title"]
-desc "Create a post in _drafts"
-task :draft, :title do |t, args|
-  title = args[:title]
-  template = CONFIG["post"]["template"]
-  extension = CONFIG["post"]["extension"]
-  editor = CONFIG["editor"]
-  check_title(title)
-  filename = transform_to_slug(title, extension)
-  content = read_file(template)
-  create_file(DRAFTS, filename, content, title, editor)
-end
-
-# rake publish
-desc "Move a post from _drafts to _posts"
-task :publish do
-  extension = CONFIG["post"]["extension"]
-  files = Dir["#{DRAFTS}/*.#{extension}"]
-  files.each_with_index do |file, index|
-    puts "#{index + 1}: #{file}".sub("#{DRAFTS}/", "")
-  end
-  print "> "
-  number = $stdin.gets
-  if number =~ /\D/
-    filename = files[number.to_i - 1].sub("#{DRAFTS}/", "")
-    FileUtils.mv("#{DRAFTS}/#{filename}", "#{POSTS}/#{DATE}-#{filename}")
-    puts "#{filename} was moved to '#{POSTS}'."
-  else
-    puts "Please choose a draft by the assigned number."
-  end
+ 
+  exit 1
 end
