@@ -21,6 +21,7 @@ Now if you have some sort of working URL in the description, it'll be blue and c
 <h2>On the Horizon</h2>
 
 We're working on implementing:
+
 - __Ask to Apply__
 - Firing project partners
 - Confirmation modals for hiring and firing
