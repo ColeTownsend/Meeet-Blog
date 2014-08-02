@@ -838,6 +838,8 @@ h4, .h4, .post article h5, .post article .h5, .post article h6, .post article .h
 .post article h1, .post article .h1, .post article h2, .post article .h2, .post article h3, .post article .h3, .post article h4 {
   font-weight: normal;
   margin-top: 1.5rem; }
+.post article h3, .post article h4, .post article h5, .post article h6 {
+  font-weight: bold; }
 .post article h5, .post article .h5, .post article h6, .post article .h6 {
   font-style: normal;
   font-weight: 600;
@@ -2021,7 +2023,6 @@ header.main {
 
 @media screen and (max-width: 480px) {
   .post {
-    font-size: 14px;
     background: white; } }
 @media screen and (max-width: 480px) {
   .post article {
