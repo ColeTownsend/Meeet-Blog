@@ -7,8 +7,6 @@ category:
 author: noah
 ---
 
-### On Creating The First Platform for Side Projects
-
 Meeet started off as a simple direct message on Twitter to a fellow designer. No plan, no elaborate office on the west coast, and no fancy investors. Yet.
 
 <hr>
