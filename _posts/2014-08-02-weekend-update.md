@@ -26,9 +26,9 @@ We're working on implementing:
 - __Ask to Apply__
 - Firing project partners
 - Confirmation modals for hiring and firing
-- direct messages
+- Direct messages
 - New tags
-- links in Activity dropdown
+- Links in activity dropdown
 
 <h3>More on Direct Messages</h3>
 We've heard your cries for a better messaging system. We're working on building a direct messaging interface so you can speak with candidates before you accept their application. These will be project specific to help you keep track of who's talking about what.
