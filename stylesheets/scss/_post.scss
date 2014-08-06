@@ -22,7 +22,8 @@
 	.top-cuts {
 		width: 8em;
 		height: auto;
-		margin: $base-line-height auto;
+		margin: $base-line-height*2 auto;
+		margin-top: ($base-line-height*2)-1em;
 		margin-top: 0;
 		display: block;
 	}

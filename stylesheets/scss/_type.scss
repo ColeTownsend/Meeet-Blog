@@ -2,71 +2,68 @@
 /////////////////////////////////////////
 
 body {
-	color: $base-font-color;
-	font-family: $head;
-	font-size: $base-font-size;
-	-webkit-font-smoothing: antialiased;
-	line-height: $base-line-height;
+  color: $base-font-color;
+  font-family: $head;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  line-height: $base-line-height;
   margin-bottom: 9.6em; // footer height
   min-height: 100%;
   height: 100%;
 }
 
 h1,.h1 ,%h1, h2, .h2,%h2, h3, .h3,%h3, h4, h5, h6 {
-	font-family: $header-font-family;
-	line-height: 1.25em;
-	margin: 0;
-	text-rendering: optimizeLegibility; //fix the character spacing for headings
+  font-family: $header-font-family;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility; //fix the character spacing for headings
 }
 
 h5,h6 {
-	font-family: $base-font-family;
+  font-family: $base-font-family;
 }
 
 h1,.h1,%h1 {
-	font-size: $fs1; // 16 * 2 = 36px
-	line-height: 1.1em;
-	margin-bottom: .42em;
-	font-weight: normal;
+  font-size: $fs1; // 16 * 2 = 36px
+  line-height: 1.1em;
+  margin-bottom: .42em;
+  font-weight: normal;
 }
 
 h2,.h2,%h2 {
-	font-size: $fs2; // 16 * 1.75 = 24px
-	line-height: 1.16em;
-	margin-bottom: .36em;
-	font-weight: normal;
+  font-size: $fs2; // 16 * 1.75 = 24px
+  line-height: 1.16em;
+  margin-bottom: .36em;
+  font-weight: normal;
 }
 
 h3,.h3,%h3 {
-	font-size: $fs3; // 16 * 1.75 = 24px
-	line-height: 1.25em;
-	margin-bottom: .50em;
+  font-size: $fs3; // 16 * 1.75 = 24px
+  line-height: 1.25em;
+  margin-bottom: .50em;
   font-weight: 400;
 }
 
 h4,.h4,%h4 {
-	font-size: $fs7;
-	@extend %caps-lock;
-	font-weight: 600;
-	line-height: 1.5rem;
-	margin-top: 1.5rem;
-	margin-bottom: 0;
+  font-size: $fs7;
+  @extend %caps-lock;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 p {
-	// margin: 0 0 ($base-line-height * .5);
-	-ms-word-break: break-all;
-	word-break: break-all;
-	color: $base-font-color;
-	/* Non standard for webkit */
-	word-break: break-word;
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	hyphens: auto;
+  // margin: 0 0 ($base-line-height * .5);
+  color: $base-font-color;
+  /* Non standard for webkit */
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 .post > p {
-	color: $base-font-color;
+  color: $base-font-color;
 }
 
 p + p {
@@ -80,79 +77,79 @@ p a {
 }
 
 p.caption {
-	text-align: center;
-	color: $darker-gray;
-	width: 100%;
-	font-size: $fs6;
+  text-align: center;
+  color: $darker-gray;
+  width: 100%;
+  font-size: $fs6;
   margin-bottom: .75em;
   line-height: 1.25em;
 }
 
 hr {
-	display: block;
-	margin: 0 auto;
-	width: 100%;
-	height: 1px;
-	border: none;
-	background: $light-gray;
-	margin: ($base-line-height - .5) auto;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: $light-gray;
+  margin: ($base-line-height - .5) auto;
 }
 
 img {
-	margin: 0;
-	max-width: 100%;
+  margin: 0;
+  max-width: 100%;
 }
 
 abbr, acronym {
-	border-bottom: 1px dotted $base-border-color;
-	cursor: help;
+  border-bottom: 1px dotted $base-border-color;
+  cursor: help;
 }
 
 address {
-	display: block;
-	margin: 0 0 ($base-line-height / 2);
+  display: block;
+  margin: 0 0 ($base-line-height / 2);
 }
 
 del {
-	color: transparentize($base-font-color, .33);
+  color: transparentize($base-font-color, .33);
 }
 
 blockquote {
-	font-style: italic;
-	margin: $base-line-height 0;
-	margin-left: $base-line-height;
-	padding-left: $base-line-height;
+  font-style: italic;
+  margin: $base-line-height 0;
+  margin-left: $base-line-height;
+  padding-left: $base-line-height;
 }
 
 small {
-	font-size: $fs5;
-	display: block;
+  font-size: $fs5;
+  display: block;
 }
 
 em {
-	font-style: italic;
+  font-style: italic;
 }
 
 b {
-	font-weight: 600;
-	letter-spacing: -0.04em;
+  font-weight: 600;
+  letter-spacing: -0.04em;
 }
 
 cite {
-	color: lighten($base-font-color, 25);
-	font-style: italic;
+  color: lighten($base-font-color, 25);
+  font-style: italic;
 
-	&:before {
-		content: '\2014 \00A0';
-	}
+  &:before {
+    content: '\2014 \00A0';
+  }
 }
 
 pre {
-	background: $light-black;
-	color: $white;
-	padding: $base-line-height/2;
-	border-radius: $base-border-radius;
-	margin: $base-line-height 0;
+  background: $light-black;
+  color: $white;
+  padding: $base-line-height/2;
+  border-radius: $base-border-radius;
+  margin: $base-line-height 0;
 }
 
 // copy
@@ -166,8 +163,8 @@ pre {
 
 // tracking on titles
 %title      {
-	letter-spacing:0.08em;
-	text-transform:uppercase;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
 }
 
 // alignment
@@ -192,25 +189,28 @@ pre {
 // article headers
 .post {
   article {
-		&:first-child {
-			margin-top: 0;
-	  }
-		h1,.h1,h2,.h2,h3,.h3,,h4 {
-  		font-weight: normal;
-  		margin-top: 1.5rem;
-		}
-		h3, h4, h5, h6 {
-			font-weight: bold;
-		}
-		h5,.h5,h6,.h6 {
-			@extend %caps-lock;
-			font-style: normal;
-			font-weight: 600;
-			margin-top: 1.5rem;
-			letter-spacing: 0.1em;
-		}
-		p + p {
-	  	margin-top: $line-height;
-		}
+    &:first-child {
+      margin-top: 0;
+    }
+    h1,.h1,h2,.h2,h3,.h3,,h4 {
+      font-weight: normal;
+      margin-top: 1.5rem;
+    }
+    h3, h4, h5, h6 {
+      font-weight: bold;
+    }
+    h5,.h5,h6,.h6 {
+      @extend %caps-lock;
+      font-style: normal;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      letter-spacing: 0.1em;
+    }
+    p:first-of-type {
+      font-size: ($fs3 + 2px);
+    }
+    p + p {
+      margin-top: $line-height;
+    }
   }
 }

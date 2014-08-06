@@ -748,11 +748,8 @@ h4, .h4 {
   margin-bottom: 0; }
 
 p {
-  -ms-word-break: break-all;
-  word-break: break-all;
   color: #4e596b;
   /* Non standard for webkit */
-  word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto; }
@@ -845,6 +842,8 @@ h4, .h4, .post article h5, .post article .h5, .post article h6, .post article .h
   font-weight: 600;
   margin-top: 1.5rem;
   letter-spacing: 0.1em; }
+.post article p:first-of-type {
+  font-size: 20px; }
 .post article p + p {
   margin-top: 1.5em; }
 
@@ -1972,7 +1971,8 @@ header.main {
 .post .top-cuts {
   width: 8em;
   height: auto;
-  margin: 1.5em auto;
+  margin: 3em auto;
+  margin-top: 2em;
   margin-top: 0;
   display: block; }
 .post h1 {

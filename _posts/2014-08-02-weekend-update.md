@@ -1,6 +1,6 @@
 ---
 layout: post
-date: {}
+date: 2014-08-02
 title: Weekend Update 8/2
 categories: updates
 author: cole
