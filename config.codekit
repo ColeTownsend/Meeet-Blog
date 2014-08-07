@@ -131,6 +131,18 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_posts\/2014-08-07-top-cuts-from-meeet-8-7-.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/_posts\/2014-08-07-top-cuts-from-meeet-8-7-.md",
+		"outputAbbreviatedPath": "\/_posts\/2014-08-07-top-cuts-from-meeet-8-7-.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/about.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
@@ -519,7 +531,7 @@
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/scss\/_modal.scss",
 		"outputAbbreviatedPath": "\/stylesheets\/css\/_modal.css",
@@ -575,7 +587,7 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
+		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
 	"\/stylesheets\/scss\/_styles.scss": {

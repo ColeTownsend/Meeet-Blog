@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
+@import url("http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
@@ -834,14 +835,19 @@ h4, .h4, .post article h5, .post article .h5, .post article h6, .post article .h
   margin-top: 0; }
 .post article h1, .post article .h1, .post article h2, .post article .h2, .post article h3, .post article .h3, .post article h4 {
   font-weight: normal;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif; }
 .post article h3, .post article h4, .post article h5, .post article h6 {
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif; }
 .post article h5, .post article .h5, .post article h6, .post article .h6 {
   font-style: normal;
   font-weight: 600;
   margin-top: 1.5rem;
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.1em;
+  font-family: "Source Sans Pro", Source Sans Pro, "Helvetica Neue", sans-serif; }
+.post article p {
+  font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif; }
 .post article p:first-of-type {
   font-size: 20px; }
 .post article p + p {
@@ -2030,7 +2036,8 @@ header.main {
     border: none;
     box-shadow: none; }
     .post article p {
-      font-size: 16px; } }
+      font-size: 16px;
+      font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif; } }
 
 .author-card {
   border: none;
@@ -2197,203 +2204,5 @@ footer {
       color: #b4b4b4; }
       footer .inner small:last-child {
         margin-right: 0; }
-
-.block {
-  position: fixed;
-  z-index: 9999;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0; }
-  .block .modal {
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    width: 25em;
-    height: auto;
-    border-radius: 3px;
-    background-color: white;
-    margin-top: -12.5em; }
-    .block .modal .body {
-      padding: 1.5em; }
-    .block .modal label {
-      margin-top: 1.5em;
-      font-size: 10px;
-      display: block;
-      color: #4e596b;
-      line-height: 1rem;
-      margin-bottom: 3px;
-      letter-spacing: 0.04em; }
-    .block .modal .footer {
-      background-color: #fcfcfc;
-      padding: 1.5em;
-      border-bottom-left-radius: 3px;
-      border-bottom-right-radius: 3px;
-      position: relative; }
-      .block .modal .footer .modal-close {
-        border: none;
-        -webkit-border-radius: 3px;
-        border-radius: 3px;
-        color: #b4b4b4;
-        display: inline-block;
-        font-size: inherit;
-        font-weight: normal;
-        font-family: "Source Sans Pro", Source Sans Pro, "Helvetica Neue", sans-serif;
-        font-size: 14px;
-        height: 32px;
-        line-height: 28px;
-        min-width: 96px;
-        letter-spacing: 0.01em;
-        text-decoration: none;
-        background-clip: padding-box;
-        cursor: pointer;
-        padding: 0 .5rem;
-        background: #b4b4b4;
-        color: white;
-        -webkit-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        -moz-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        font-weight: 300;
-        -webkit-font-smoothing: subpixel-antialiased !important; }
-        .block .modal .footer .modal-close:hover {
-          background: #969696;
-          -webkit-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          -moz-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-        .block .modal .footer .modal-close:active {
-          background: #a0a0a0;
-          -webkit-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          -moz-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-        .block .modal .footer .modal-close:disabled {
-          background: #b4b4b4;
-          cursor: pointer; }
-      .block .modal .footer .modal-submit {
-        border: none;
-        -webkit-border-radius: 3px;
-        border-radius: 3px;
-        color: #65e05c;
-        display: inline-block;
-        font-size: inherit;
-        font-weight: normal;
-        font-family: "Source Sans Pro", Source Sans Pro, "Helvetica Neue", sans-serif;
-        font-size: 14px;
-        height: 32px;
-        line-height: 28px;
-        min-width: 96px;
-        letter-spacing: 0.01em;
-        text-decoration: none;
-        background-clip: padding-box;
-        cursor: pointer;
-        padding: 0 .5rem;
-        background: #65e05c;
-        color: white;
-        -webkit-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        -moz-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        font-weight: 300;
-        -webkit-font-smoothing: subpixel-antialiased !important; }
-        .block .modal .footer .modal-submit:hover {
-          background: #35d629;
-          -webkit-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          -moz-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-        .block .modal .footer .modal-submit:active {
-          background: #45d93a;
-          -webkit-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          -moz-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-        .block .modal .footer .modal-submit:disabled {
-          background: #9e9e9e;
-          cursor: pointer; }
-        .block .modal .footer .modal-submit[data-name="Fire"] {
-          border: none;
-          -webkit-border-radius: 3px;
-          border-radius: 3px;
-          color: #d27873;
-          display: inline-block;
-          font-size: inherit;
-          font-weight: normal;
-          font-family: "Source Sans Pro", Source Sans Pro, "Helvetica Neue", sans-serif;
-          font-size: 14px;
-          height: 32px;
-          line-height: 28px;
-          min-width: 96px;
-          letter-spacing: 0.01em;
-          text-decoration: none;
-          background-clip: padding-box;
-          cursor: pointer;
-          padding: 0 .5rem;
-          background: #d27873;
-          color: white;
-          -webkit-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          -moz-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          font-weight: 300;
-          -webkit-font-smoothing: subpixel-antialiased !important; }
-          .block .modal .footer .modal-submit[data-name="Fire"]:hover {
-            background: #c34b45;
-            -webkit-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-            -moz-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-            transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-          .block .modal .footer .modal-submit[data-name="Fire"]:active {
-            background: #c85a54;
-            -webkit-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-            -moz-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-            transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-          .block .modal .footer .modal-submit[data-name="Fire"]:disabled {
-            background: #a3a3a3;
-            cursor: pointer; }
-
-.modal-toggle {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-top: 2.25em; }
-  .modal-toggle#fire {
-    border: none;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    color: #d27873;
-    display: inline-block;
-    font-size: inherit;
-    font-weight: normal;
-    font-family: "Source Sans Pro", Source Sans Pro, "Helvetica Neue", sans-serif;
-    font-size: 14px;
-    height: 32px;
-    line-height: 28px;
-    min-width: 96px;
-    letter-spacing: 0.01em;
-    text-decoration: none;
-    background-clip: padding-box;
-    cursor: pointer;
-    padding: 0 .5rem;
-    background: #d27873;
-    color: white;
-    -webkit-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    -moz-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    font-weight: 300;
-    -webkit-font-smoothing: subpixel-antialiased !important;
-    margin-left: auto;
-    margin-right: auto;
-    display: block; }
-    .modal-toggle#fire:hover {
-      background: #c34b45;
-      -webkit-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-      -moz-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-      transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-    .modal-toggle#fire:active {
-      background: #c85a54;
-      -webkit-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-      -moz-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-      transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-    .modal-toggle#fire:disabled {
-      background: #a3a3a3;
-      cursor: pointer; }
 
 /*# sourceMappingURL=i.css.map */

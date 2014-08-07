@@ -195,9 +195,11 @@ pre {
     h1,.h1,h2,.h2,h3,.h3,,h4 {
       font-weight: normal;
       margin-top: 1.5rem;
+      font-family: $serif;
     }
     h3, h4, h5, h6 {
       font-weight: bold;
+      font-family: $serif;
     }
     h5,.h5,h6,.h6 {
       @extend %caps-lock;
@@ -205,6 +207,10 @@ pre {
       font-weight: 600;
       margin-top: 1.5rem;
       letter-spacing: 0.1em;
+      font-family: $sans-serif;
+    }
+    p {
+      font-family: $serif;
     }
     p:first-of-type {
       font-size: ($fs3 + 2px);
