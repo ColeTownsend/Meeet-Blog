@@ -1,6 +1,5 @@
 ---
 layout: post
-
 title: Working in Community
 date: 2014-07-28
 category: 
