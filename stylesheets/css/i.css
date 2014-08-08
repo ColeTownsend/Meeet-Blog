@@ -847,7 +847,8 @@ h4, .h4, .post article h5, .post article .h5, .post article h6, .post article .h
   letter-spacing: 0.1em;
   font-family: "Source Sans Pro", Source Sans Pro, "Helvetica Neue", sans-serif; }
 .post article p {
-  font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif; }
+  font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif;
+  line-height: 1.55; }
 .post article p:first-of-type {
   font-size: 20px; }
 .post article p + p {
@@ -1851,6 +1852,11 @@ header.main {
     padding: 0; }
     .content aside:last-child {
       margin-right: 0; }
+    .content aside ul {
+      margin: 0.75em 0; }
+      .content aside ul li {
+        list-style-type: circle;
+        margin-left: 1.5em; }
     @media screen and (max-width: 480px) {
       .content aside {
         margin-left: 0%;
@@ -2106,7 +2112,7 @@ header.main {
       margin-top: 0;
       margin-bottom: .5em; }
   .author-card .author-bio {
-    font-size: 14px;
+    font-size: 16px !important;
     margin-bottom: .5em; }
 
 .mobile-show {

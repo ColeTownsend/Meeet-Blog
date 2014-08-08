@@ -52,6 +52,14 @@
     min-height: 26em;
     @extend %bordered;
     padding: 0;
+    // lists
+    ul {
+      margin: $base-line-height/2 0;
+      li {
+        list-style-type: circle;
+        margin-left: $base-line-height;
+      }
+    }
     // mobile
     @include media($small) {
       @include shift(0);
