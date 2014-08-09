@@ -6,7 +6,7 @@ date: 2014-08-09
 categories: updates
 ---
 
-We're into our second full week. It's been an awesome ride so far and the updates are continuing to roll in! We're super stoked about the new stuff that will be coming in.
+We're into our second full week. It's been an awesome ride so far and the updates are continuing to roll in! We're super stoked about the new stuff and the pesky bug fixes.
 
 <h3>Project Status</h3>
 We've applied some new project states, so now it's more obvious if a project is in progress or finished. 
