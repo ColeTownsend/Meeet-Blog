@@ -22,5 +22,5 @@ We have a rudimentary messaging system. It's far from perfect and we're building
 - Overall stats for Meeet (live updates too!)
 - Fully implementing Direct Messaging
 - Minor UX changes for project and profile creation
-- links in the Activity dropdown
-- fixing autolinking in project descriptions
+- Links in the Activity dropdown
+- Fixing autolinking in project descriptions
