@@ -849,6 +849,9 @@ h4, .h4, .post article h5, .post article .h5, .post article h6, .post article .h
 .post article p {
   font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif;
   line-height: 1.55; }
+.post article ul, .post article ol {
+  font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif;
+  line-height: 1.55; }
 .post article p:first-of-type {
   font-size: 20px; }
 .post article p + p {
@@ -2021,6 +2024,8 @@ header.main {
     margin: 3em auto;
     margin-bottom: 1.5em; }
   .post article p {
+    font-size: 18px; }
+  .post article ul li {
     font-size: 18px; }
 .post ul {
   margin: 0.75em 0;

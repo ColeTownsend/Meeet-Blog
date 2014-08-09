@@ -213,6 +213,10 @@ pre {
       font-family: $serif;
       line-height: 1.55;
     }
+    ul, ol {
+      font-family: $serif;
+      line-height: 1.55;
+    }
     p:first-of-type {
       font-size: ($fs3 + 2px);
     }
