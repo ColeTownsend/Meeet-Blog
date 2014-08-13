@@ -848,12 +848,12 @@ h4, .h4, .post article h5, .post article .h5, .post article h6, .post article .h
   font-family: "Source Sans Pro", Source Sans Pro, "Helvetica Neue", sans-serif; }
 .post article p {
   font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif;
-  line-height: 1.55; }
+  line-height: 1.6; }
 .post article ul, .post article ol {
   font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif;
-  line-height: 1.55; }
+  line-height: 1.6; }
 .post article p:first-of-type {
-  font-size: 20px; }
+  font-size: 19px; }
 .post article p + p {
   margin-top: 1.5em; }
 
@@ -1984,16 +1984,16 @@ header.main {
     clear: both; }
 
 .post .top-cuts {
-  width: 8em;
+  width: 4.5em;
   height: auto;
   margin: 3em auto;
-  margin-top: 2em;
+  margin-top: 1.5em;
   margin-top: 0;
   display: block; }
 .post h1 {
   font-weight: 100; }
 .post article {
-  padding: 3em;
+  padding: 4.5em;
   float: left;
   display: block;
   margin-right: 2.04082%;
@@ -2047,7 +2047,6 @@ header.main {
     border: none;
     box-shadow: none; }
     .post article p {
-      font-size: 16px;
       font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif; } }
 
 .author-card {
