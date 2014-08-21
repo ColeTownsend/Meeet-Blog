@@ -33,7 +33,7 @@
 	// border the article area
 	article {
 		@extend %bordered;
-		padding: $base-line-height*3;
+		padding: $base-line-height*3 $base-line-height*4;
 		@include span-columns(10);
 		line-height: 1.5;
 		a {
