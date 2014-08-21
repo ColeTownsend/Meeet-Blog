@@ -798,11 +798,17 @@ address {
 del {
   color: rgba(78, 89, 107, 0.67); }
 
-blockquote {
-  font-style: italic;
-  margin: 1.5em 0;
-  margin-left: 1.5em;
-  padding-left: 1.5em; }
+.post article blockquote p {
+  font-family: "Source Sans Pro", Source Sans Pro, "Helvetica Neue", sans-serif;
+  margin: 0.75em 0;
+  text-align: center;
+  font-size: 24px; }
+
+.post article > blockquote + blockquote {
+  margin: 0.375em 0; }
+
+.post article blockquote {
+  margin: 0.75em 0; }
 
 small {
   font-size: 14px;
@@ -852,8 +858,6 @@ h4, .h4, .post article h5, .post article .h5, .post article h6, .post article .h
 .post article ul, .post article ol {
   font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif;
   line-height: 1.6; }
-.post article p:first-of-type {
-  font-size: 19px; }
 .post article p + p {
   margin-top: 1.5em; }
 
