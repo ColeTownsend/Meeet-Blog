@@ -19,13 +19,22 @@
 .post {
 	// change base font-size
 	// fix h1 weight
-	.top-cuts {
-		width: 4.5em;
+	.post-icon {
+		width: 5em;
 		height: auto;
-		margin: $base-line-height*2 auto;
-		margin-top: ($base-line-height*2)-1.5em;
-		margin-top: 0;
+		/* margin: 3em auto; */
+		/* margin-top: 1.5em; */
+		margin: 0 auto;
 		display: block;
+		position: absolute;
+		top: -2.5em;
+		left: 50%;
+		margin-left: -2.5em;
+		@extend %bordered;
+		padding: .5em;
+		border-radius: 2.5em;
+		background:white;
+
 	}
 	h1 {
 		font-weight: 100;
@@ -33,9 +42,10 @@
 	// border the article area
 	article {
 		@extend %bordered;
-		padding: $base-line-height*3 $base-line-height*4;
+		padding: $base-line-height*3 $base-line-height*3;
 		@include span-columns(10);
 		line-height: 1.5;
+		position: relative;
 		a {
 			@include link-hover($base-link-color, 10, underline);
 		}

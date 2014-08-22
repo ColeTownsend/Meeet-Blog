@@ -13,7 +13,8 @@ So this is crazy. [We've launched a Kickstarter](https://www.kickstarter.com/pro
 
 > Total active projects: 93
 
-[Invest and change the future.](https://www.kickstarter.com/projects/meeet/meeet-co-finish-your-side-projects-find-your-next)
+
+We're really excited about expanding our product. We're planning on building in third party integrations and getting sweet deals on other services to help you up the ante on your projects — Layervault, Product Hunt, Github, Heroku, and a bunch more. _We're also looking to build out the Meeet API to get integration with Slack channels so you can track who has applied, comments, and direct messages._ [Invest and change the future.](https://www.kickstarter.com/projects/meeet/meeet-co-finish-your-side-projects-find-your-next)
 
 
 

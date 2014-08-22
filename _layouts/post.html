@@ -10,10 +10,10 @@
       </header>
       <article>
         {% if page.categories contains 'cuts' %}
-          <img class="top-cuts" src="{{ site.url }}/images/logos/meeet-party-logo.png" alt="Top Cuts!">
+          <img class="post-icon" src="{{ site.url }}/images/logos/meeet-party-logo.png" alt="Top Cuts!">
         {% endif %}
         {% if page.categories contains 'updates' %}
-          <img class="top-cuts" src="{{ site.url }}/images/logos/meeet-update-logo.png" alt="Updates This Week">
+          <img class="post-icon" src="{{ site.url }}/images/logos/meeet-update-logo.png" alt="Updates This Week">
         {% endif %}
         {{ content }}
         <!-- Twitter -->
@@ -30,7 +30,7 @@
     </div>
 
     {% include footer.html %}
-    
+
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </body>
 </html>

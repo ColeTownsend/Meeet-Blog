@@ -80,7 +80,7 @@ header.main .inner, .content, .content .container, .content article.outlined, fo
     header.main .inner, .content, .content .container, .content article.outlined, footer .inner {
       padding: 0 1em; } }
 
-.content aside, .content article.outlined, .content article section, .post article {
+.content aside, .content article.outlined, .content article section, .post .post-icon, .post article {
   background: white;
   border: 1px solid #e8e8e8;
   border-top-left-radius: 3px;
@@ -88,8 +88,8 @@ header.main .inner, .content, .content .container, .content article.outlined, fo
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   padding: 1rem;
-  -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.02);
-  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.02); }
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.02);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.02); }
 
 .popOut {
   -webkit-animation-name: popOut;
@@ -800,14 +800,11 @@ del {
 
 .post article blockquote p {
   font-family: "Source Sans Pro", Source Sans Pro, "Helvetica Neue", sans-serif;
-  margin: 0.75em 0;
+  margin: 0.375em 0;
   text-align: center;
   font-size: 24px; }
 
-.post article > blockquote + blockquote {
-  margin: 0.375em 0; }
-
-.post article blockquote {
+blockquote + blockquote, p + blockquote, blockquote + p {
   margin: 0.75em 0; }
 
 small {
@@ -841,22 +838,17 @@ h4, .h4, .post article h5, .post article .h5, .post article h6, .post article .h
   margin-top: 0; }
 .post article h1, .post article .h1, .post article h2, .post article .h2, .post article h3, .post article .h3, .post article h4 {
   font-weight: normal;
-  margin-top: 1.5rem;
-  font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif; }
+  margin-top: 1.5rem; }
 .post article h3, .post article h4, .post article h5, .post article h6 {
-  font-weight: bold;
-  font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif; }
+  font-weight: bold; }
 .post article h5, .post article .h5, .post article h6, .post article .h6 {
   font-style: normal;
   font-weight: 600;
   margin-top: 1.5rem;
-  letter-spacing: 0.1em;
-  font-family: "Source Sans Pro", Source Sans Pro, "Helvetica Neue", sans-serif; }
+  letter-spacing: 0.1em; }
 .post article p {
-  font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif;
-  line-height: 1.6; }
+  line-height: 1.7; }
 .post article ul, .post article ol {
-  font-family: "Source Serif Pro", Source Serif Pro, "Georgia", serif;
   line-height: 1.6; }
 .post article p + p {
   margin-top: 1.5em; }
@@ -1987,22 +1979,30 @@ header.main {
   .post-listing p:after {
     clear: both; }
 
-.post .top-cuts {
-  width: 4.5em;
+.post .post-icon {
+  width: 5em;
   height: auto;
-  margin: 3em auto;
-  margin-top: 1.5em;
-  margin-top: 0;
-  display: block; }
+  /* margin: 3em auto; */
+  /* margin-top: 1.5em; */
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: -2.5em;
+  left: 50%;
+  margin-left: -2.5em;
+  padding: .5em;
+  border-radius: 2.5em;
+  background: white; }
 .post h1 {
   font-weight: 100; }
 .post article {
-  padding: 4.5em 6em;
+  padding: 4.5em 4.5em;
   float: left;
   display: block;
   margin-right: 2.04082%;
   width: 100%;
-  line-height: 1.5; }
+  line-height: 1.5;
+  position: relative; }
   .post article:last-child {
     margin-right: 0; }
   .post article a {
