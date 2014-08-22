@@ -29,6 +29,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_includes\/js_includes.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_includes\/js_includes.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_includes\/noah-card.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -152,15 +161,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_posts\/2014-08-09-weekend-update-8-9.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/2014-08-09-weekend-update-8-9.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/_posts\/2014-08-09-weekend-update-8-9.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
@@ -170,15 +170,6 @@
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/_posts\/2014-08-09-weekend-update-8-9.md",
 		"outputAbbreviatedPath": "\/_posts\/2014-08-09-weekend-update-8-9.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_posts\/2014-08-21-weekend-update-8-21.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/2014-08-21-weekend-update-8-21.html",
-		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -208,15 +199,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_site\/2014\/07\/28\/Working-in-Community\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/2014\/08\/21\/weekend-update-8-21\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/2014\/08\/21\/weekend-update-8-21\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -274,7 +256,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 58610,
+		"initialSize": 56937,
 		"inputAbbreviatedPath": "\/_site\/images\/avatar\/cole@2x.png",
 		"outputAbbreviatedPath": "\/_site\/images\/avatar\/cole@2x.png",
 		"outputPathIsOutsideProject": 0,
@@ -318,7 +300,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 54927,
+		"initialSize": 53962,
 		"inputAbbreviatedPath": "\/_site\/images\/avatar\/noah@2x.png",
 		"outputAbbreviatedPath": "\/_site\/images\/avatar\/noah@2x.png",
 		"outputPathIsOutsideProject": 0,
@@ -422,6 +404,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/scripts\/retina.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/scripts\/retina.js",
+		"outputAbbreviatedPath": "\/_site\/scripts\/min\/retina-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/_site\/stylesheets\/css\/i.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -524,7 +517,7 @@
 		"outputAbbreviatedPath": "\/images\/avatar\/cole.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/avatar\/cole@2x.png": {
 		"fileType": 32768,
@@ -546,7 +539,7 @@
 		"outputAbbreviatedPath": "\/images\/avatar\/default 2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/avatar\/noah.jpg": {
 		"fileType": 16384,
@@ -568,7 +561,7 @@
 		"outputAbbreviatedPath": "\/images\/avatar\/noah.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/avatar\/noah@2x.png": {
 		"fileType": 32768,
@@ -625,6 +618,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/images\/inline\/ticket-sticker.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/inline\/ticket-sticker.png",
+		"outputAbbreviatedPath": "\/images\/inline\/ticket-sticker.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/logos\/meeet-party-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -634,7 +638,7 @@
 		"outputAbbreviatedPath": "\/images\/logos\/meeet-party-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/logos\/meeet-party-logo@2x.png": {
 		"fileType": 32768,
@@ -645,7 +649,7 @@
 		"outputAbbreviatedPath": "\/images\/logos\/meeet-party-logo@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/logos\/meeet-update-logo.png": {
 		"fileType": 32768,
@@ -689,6 +693,17 @@
 		"outputAbbreviatedPath": "\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/scripts\/retina.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scripts\/retina.js",
+		"outputAbbreviatedPath": "\/scripts\/min\/retina-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/stylesheets\/css\/i.css": {
 		"fileType": 16,

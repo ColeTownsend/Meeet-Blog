@@ -16,5 +16,10 @@ So this is crazy. [We've launched a Kickstarter](https://www.kickstarter.com/pro
 
 We're really excited about expanding our product. We're planning on building in third party integrations and getting sweet deals on other services to help you up the ante on your projects — Layervault, Product Hunt, Github, Heroku, and a bunch more. _We're also looking to build out the Meeet API to get integration with Slack channels so you can track who has applied, comments, and direct messages._ [Invest and change the future.](https://www.kickstarter.com/projects/meeet/meeet-co-finish-your-side-projects-find-your-next)
 
+Just think, you'll have the opportunity to get your hands on one of these guys.
+<br>
+
+<img src="{{ site.url }}{{ site.images_url}}ticket-sticker.png" alt="">
+
 
 
