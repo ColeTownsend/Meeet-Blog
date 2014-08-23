@@ -2147,7 +2147,7 @@ header.main {
   position: relative; }
   .post article:last-child {
     margin-right: 0; }
-  .post article p a {
+  .post article p a, .post article h1 a, .post article h2 a, .post article h3 a, .post article h4 a {
     color: #66b5f3;
     -webkit-transition: color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     -moz-transition: color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -2158,7 +2158,7 @@ header.main {
     text-shadow: 0.04em 0 #fcfcfc, -0.04em 0 #fcfcfc, 0 0.04em #fcfcfc, 0 -0.06em #fcfcfc, 0.08em 0 #fcfcfc, -0.08em 0 #fcfcfc, 0.08em 0 #fcfcfc, -0.1em 0 #fcfcfc, 0.12em 0 #fcfcfc, -0.12em 0 #fcfcfc, 0.14em 0 #fcfcfc, -0.14em 0 #fcfcfc;
     background-position-y: 96%, 96%, 96%;
     background-position-x: 0%, 100%, 0%; }
-    .post article p a:hover {
+    .post article p a:hover, .post article h1 a:hover, .post article h2 a:hover, .post article h3 a:hover, .post article h4 a:hover {
       color: #379eef;
       -webkit-transition: color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
       -moz-transition: color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -2226,6 +2226,9 @@ header.main {
     -webkit-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     -moz-transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     transition: background 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    background: none;
+    text-shadow: none;
+    text-align: center;
     background: none;
     position: absolute;
     right: 0; }

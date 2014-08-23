@@ -45,7 +45,7 @@
 		@include span-columns(10);
 		line-height: 1.5;
 		position: relative;
-		p a {
+		p a, h1 a, h2 a, h3 a, h4 a {
 			@include link-hover($base-link-color, 10, underline);
 		}
 		hr.card-break {
@@ -100,6 +100,9 @@
 	}
 	.twitter-handle {
 		@include button-default($blue, 16px, 24px, outline);
+		text-shadow: none;
+		text-align: center;
+		background:none;
 		position: absolute;
 		right: 0;
 	}

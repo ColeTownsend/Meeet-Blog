@@ -4,6 +4,7 @@ title: From Nothing
 date: 2014-07-14
 category: 
 author: noah
+sub_title: A Quick Message
 ---
 
 Meeet started off as a simple direct message on Twitter to a fellow designer. No plan, no elaborate office on the west coast, and no fancy investors. Yet.

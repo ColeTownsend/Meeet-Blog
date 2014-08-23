@@ -3,19 +3,18 @@ layout: post
 date: 2014-08-02
 title: Weekend Update 8/2
 categories: update
+author: cole
+sub_title: Some Downtime
 ---
 
 We have a lot of awesome stuff brewing up for all of you. _Thank you for being incredibly patient and bearing with our server issues._ We've upgraded everything, and should experience limited downtime and soon — no downtime.
 
-<hr>
-
-<h3>Fresh Blog</h3>
+<blockquote>
+<h3><span class="update">Update</span>Fresh Blog</h3>
 We have a new blog where we will post updates, keep track of feature requests (eventually), and post the top cuts from Meeet.
-
-<h3>Autolinking in Project Descriptions</h3>
+<h3><span class="update">Update</span>Autolinking in Project Descriptions</h3>
 Now if you have some sort of working URL in the description, it'll be blue and clickable. Neato!
-
-<hr>
+</blockquote>
 
 <h2>On the Horizon</h2>
 

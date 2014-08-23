@@ -24,7 +24,7 @@ You can now change what kinds of emails you get. You can subscribe or unsubscrib
 <h3><span class="update">Update</span>Linked Activity Feeds</h3>
 We now have some delicious links in our activity feeds so you can skip clicking on "see more" and jump right into the action.
 <h3><span class="update">Update</span>Kickstarter!</h3>
-We're sitting at about $700 right now. That's just short of 20% and it's only been about 36 hours. Also, our stickers look sweet. [http://fund.meeet.co](Get stickers.)
+We're sitting at about $700 right now. That's just short of 20% and it's only been about 36 hours. Also, our stickers look sweet. <a href="http://fund.meeet.co">Get stickers.</a>
 </blockquote>
 
 We're really excited about expanding our product. We're planning on building in third party integrations and getting sweet deals on other services to help you up the ante on your projects — Layervault, Product Hunt, Github, Heroku, and a bunch more. _We're also looking to build out the Meeet API to get integration with Slack channels so you can track who has applied, comments, and direct messages._ [Invest and change the future.](https://www.kickstarter.com/projects/meeet/meeet-co-finish-your-side-projects-find-your-next)
