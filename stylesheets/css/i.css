@@ -988,6 +988,11 @@ h4, .h4, .post article h5, .post article .h5, .post article h6, .post article .h
 .post article .sub-title {
   text-align: center;
   margin-bottom: 1.5em; }
+  @media screen and (max-width: 480px) {
+    .post article .sub-title {
+      text-align: left;
+      display: inline-block;
+      font-size: 24px; } }
 .post article p {
   line-height: 1.7; }
 .post article ul, .post article ol {
@@ -1732,18 +1737,6 @@ header.main {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  @media screen and (max-width: 480px) {
-    header.main .links {
-      float: left;
-      display: block;
-      margin-right: 3.44828%;
-      width: 82.75862%;
-      margin-right: 0; }
-      header.main .links:last-child {
-        margin-right: 0; }
-      header.main .links a {
-        text-align: right;
-        float: right; } }
   header.main .logo {
     float: left;
     display: block;
@@ -1751,6 +1744,9 @@ header.main {
     width: 8.16327%; }
     header.main .logo:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      header.main .logo {
+        display: none; } }
   header.main .links {
     float: left;
     display: block;
@@ -1759,6 +1755,17 @@ header.main {
     height: 2em; }
     header.main .links:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      header.main .links {
+        float: left;
+        display: block;
+        margin-right: 3.44828%;
+        width: 100%;
+        float: none;
+        display: block;
+        margin: 0 auto; }
+        header.main .links:last-child {
+          margin-right: 0; } }
     header.main .links a {
       color: #4e596b;
       -webkit-transition: color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -1779,6 +1786,16 @@ header.main {
         -moz-transition: text-shadow 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         transition: text-shadow 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         text-shadow: 0 0 1px rgba(56, 64, 78, 0.1); }
+      @media screen and (max-width: 480px) {
+        header.main .links a {
+          float: left;
+          display: block;
+          margin-right: 3.44828%;
+          width: 31.03448%; }
+          header.main .links a:last-child {
+            margin-right: 0; } }
+      header.main .links a:last-of-type {
+        float: right; }
   header.main .buttons {
     float: left;
     display: block;
@@ -2113,6 +2130,11 @@ header.main {
   text-align: right;
   float: right;
   color: #b4b4b4; }
+  @media screen and (max-width: 480px) {
+    .post-listing .date {
+      float: none;
+      text-align: left;
+      display: block; } }
 .post-listing p {
   *zoom: 1; }
   .post-listing p:before, .post-listing p:after {
@@ -2135,6 +2157,16 @@ header.main {
   padding: .5em;
   border-radius: 2.5em;
   background: white; }
+  @media screen and (max-width: 480px) {
+    .post .post-icon {
+      width: 3em;
+      left: 0;
+      margin-left: 0;
+      top: 1em;
+      border-width: .5px;
+      display: inline-block;
+      position: relative;
+      margin-right: 1rem; } }
 .post h1 {
   font-weight: 100; }
 .post article {
@@ -2147,7 +2179,7 @@ header.main {
   position: relative; }
   .post article:last-child {
     margin-right: 0; }
-  .post article p a, .post article h1 a, .post article h2 a, .post article h3 a, .post article h4 a {
+  .post article a {
     color: #66b5f3;
     -webkit-transition: color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     -moz-transition: color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -2158,7 +2190,7 @@ header.main {
     text-shadow: 0.04em 0 #fcfcfc, -0.04em 0 #fcfcfc, 0 0.04em #fcfcfc, 0 -0.06em #fcfcfc, 0.08em 0 #fcfcfc, -0.08em 0 #fcfcfc, 0.08em 0 #fcfcfc, -0.1em 0 #fcfcfc, 0.12em 0 #fcfcfc, -0.12em 0 #fcfcfc, 0.14em 0 #fcfcfc, -0.14em 0 #fcfcfc;
     background-position-y: 96%, 96%, 96%;
     background-position-x: 0%, 100%, 0%; }
-    .post article p a:hover, .post article h1 a:hover, .post article h2 a:hover, .post article h3 a:hover, .post article h4 a:hover {
+    .post article a:hover {
       color: #379eef;
       -webkit-transition: color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
       -moz-transition: color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -2230,8 +2262,8 @@ header.main {
     text-shadow: none;
     text-align: center;
     background: none;
-    position: absolute;
-    right: 0; }
+    display: inline-block;
+    margin-left: 1.5em; }
     .author-card .twitter-handle:hover {
       color: #1a90ed;
       border-color: #53acf2;
@@ -2335,6 +2367,9 @@ footer {
   background: #efefef; }
   footer .inner {
     padding: 2em 0; }
+    @media screen and (max-width: 480px) {
+      footer .inner {
+        padding: 2em 1em; } }
     footer .inner .logo {
       float: left;
       display: block;
@@ -2342,6 +2377,9 @@ footer {
       width: 8.16327%; }
       footer .inner .logo:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 480px) {
+        footer .inner .logo {
+          display: none; } }
     footer .inner .links {
       float: left;
       display: block;
@@ -2350,6 +2388,14 @@ footer {
       height: 2em; }
       footer .inner .links:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 480px) {
+        footer .inner .links {
+          float: left;
+          display: block;
+          margin-right: 3.44828%;
+          width: 48.27586%; }
+          footer .inner .links:last-child {
+            margin-right: 0; } }
       footer .inner .links a {
         color: rgba(0, 0, 0, 0.4);
         -webkit-transition: color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);

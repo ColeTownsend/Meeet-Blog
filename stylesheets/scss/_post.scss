@@ -10,6 +10,11 @@
 		text-align: right;
 		float: right;
 		color: $medium-gray;
+		@include media($small) {
+			float: none;
+			text-align: left;
+			display: block;
+		}
 	}
 	p {
 		@include clearfix;
@@ -34,6 +39,16 @@
 		padding: .5em;
 		border-radius: 2.5em;
 		background:white;
+		@include media($small) {
+			width: 3em;
+			left: 0;
+			margin-left: 0;
+			top: 1em;
+			border-width: .5px;
+			display: inline-block;
+			position: relative;
+			margin-right: 1rem;
+		}
 	}
 	h1 {
 		font-weight: 100;
@@ -45,7 +60,7 @@
 		@include span-columns(10);
 		line-height: 1.5;
 		position: relative;
-		p a, h1 a, h2 a, h3 a, h4 a {
+		a {
 			@include link-hover($base-link-color, 10, underline);
 		}
 		hr.card-break {
@@ -103,8 +118,8 @@
 		text-shadow: none;
 		text-align: center;
 		background:none;
-		position: absolute;
-		right: 0;
+		display: inline-block;
+		margin-left: $base-line-height;
 	}
 	.author-mug {
 		min-height: 8rem;

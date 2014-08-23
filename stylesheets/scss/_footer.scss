@@ -9,12 +9,21 @@ footer {
   .inner {
     @extend %container;
     padding: 2em 0;
+    @include media($small) {
+      padding: 2em 1em;
+    }
     .logo {
       @include span-columns(1);
+      @include media($small) {
+        display: none;
+      }
     }
     .links {
       @include span-columns(4.404);
       height: em(32);
+      @include media($small) {
+        @include span-columns(3);
+      }
       a {
         @extend %vertical-align;
         @include link-hover($darker-gray, 10, shadow);
@@ -23,7 +32,7 @@ footer {
         font-size: $fs5;
         &:last-of-type {
           margin-right: 0;
-        } 
+        }
       }
       &.right {
         text-align: right;

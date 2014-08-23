@@ -4,33 +4,37 @@ header.main {
   border-bottom: 1px solid $base-border-color;
   position: relative;
   @include user-select(); // defaults to none, which turns it off
-  // quick mobile fix
-  @include media($small) {
-    .links {
-      @include span-columns(5);
-      @include omega();
-      a {
-        text-align: right;
-        float: right;
-      }
-    }
-  }
   .inner {
     @extend %container;
   }
   // nested child elements
   .logo {
     @include span-columns(1);
+    @include media($small) {
+      display: none;
+    }
   }
   .links {
     @include span-columns(9);
     height: em(32);
+    @include media($small) {
+      @include span-columns(6);
+      float: none;
+      display: block;
+      margin: 0 auto;
+    }
     a {
       @extend %vertical-align;
       @include link-hover($light-black, 10, shadow);
       display: inline-block;
       margin-right: em(24, 14);
       font-size: $fs5;
+      @include media($small) {
+        @include span-columns(2 of 6)
+      }
+      &:last-of-type {
+        float: right;
+      }
     }
   }
   .buttons {
