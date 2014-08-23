@@ -3,7 +3,8 @@ layout: post
 published: true
 title: Weekend Update 8/9
 date: 2014-08-09
-categories: updates
+categories: update
+author: cole
 ---
 
 We're into our second full week. It's been an awesome ride so far and the updates are continuing to roll in! We're super stoked about the new stuff and the pesky bug fixes.

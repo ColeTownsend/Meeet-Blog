@@ -3,7 +3,8 @@ layout: post
 published: true
 date: 2014-08-07
 title: Top Cuts from Meeet 8/7
-categories: cuts
+categories: top-cuts
+author: noah
 ---
 
 Quite a bit has happened over here at Meeet HQ in the past week. Even though I was traveling, we still managed to roll out simple direct messages, daily rankings, real-time search, one-button Twitter sharing, and, my personal favorite, lazy loading. Cole and I would also like to welcome [Benjamin](https://twitter.com/nhqe) to the team. He’s extremely talented and is going to help Meeet become as kick-ass as possible.

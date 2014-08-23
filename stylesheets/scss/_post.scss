@@ -34,7 +34,6 @@
 		padding: .5em;
 		border-radius: 2.5em;
 		background:white;
-
 	}
 	h1 {
 		font-weight: 100;
@@ -42,22 +41,16 @@
 	// border the article area
 	article {
 		@extend %bordered;
-		padding: $base-line-height*3 $base-line-height*3;
+		padding: $base-line-height*3 $base-line-height*5;
 		@include span-columns(10);
 		line-height: 1.5;
 		position: relative;
-		a {
+		p a {
 			@include link-hover($base-link-color, 10, underline);
 		}
 		hr.card-break {
 			margin: ($base-line-height*2) auto;
 			margin-bottom: $base-line-height;
-		}
-		p {
-			font-size: $fs3;
-		}
-		ul li {
-			font-size: $fs3;
 		}
 	}
 	ul {
@@ -106,8 +99,9 @@
 		max-width: em(96);
 	}
 	.twitter-handle {
-		background:none;
-		@include link-hover($base-link-color, 10, shadow);
+		@include button-default($blue, 16px, 24px, outline);
+		position: absolute;
+		right: 0;
 	}
 	.author-mug {
 		min-height: 8rem;
@@ -130,7 +124,7 @@
 		}
 	}
 	.author-bio {
-		font-size: $fs4 !important;
+		font-size: $fs5;
 		margin-bottom: .5em;
 	}
 }

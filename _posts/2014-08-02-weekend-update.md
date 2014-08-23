@@ -2,7 +2,7 @@
 layout: post
 date: 2014-08-02
 title: Weekend Update 8/2
-categories: updates
+categories: update
 ---
 
 We have a lot of awesome stuff brewing up for all of you. _Thank you for being incredibly patient and bearing with our server issues._ We've upgraded everything, and should experience limited downtime and soon — no downtime.

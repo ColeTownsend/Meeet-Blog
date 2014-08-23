@@ -114,15 +114,34 @@ del {
   color: transparentize($base-font-color, .33);
 }
 
-.post article blockquote p {
-  font-family: $sans-serif;
-  margin: $base-line-height/4 0;
-  text-align: center;
-  font-size: $fs2;
-}
-
-blockquote + blockquote, p + blockquote, blockquote + p {
-  margin: $base-line-height/2 0;
+blockquote {
+  margin: $base-line-height 0;
+  margin-left: $base-line-height*4;
+  h3 {
+    position: relative;
+  }
+  .update {
+    @include button-default($blue, 16px, 24px, outline);
+    min-width: 3rem;
+    text-align: center;
+    position: absolute;
+    left: -$base-line-height*4;
+  }
+  .milestone {
+    @include button-default($purple, 16px, 24px, outline);
+    min-width: 3rem;
+    text-align: center;
+    position: absolute;
+    left: -$base-line-height*4;
+  }
+  .stats {
+    @include button-default($light-blue-gray, 16px, 24px, outline);
+    min-width: 3rem;
+    text-align: center;
+    position: absolute;
+    left: -$base-line-height*4;
+    top: -1px;
+  }
 }
 
 small {
@@ -209,6 +228,10 @@ pre {
       font-weight: 600;
       margin-top: 1.5rem;
       letter-spacing: 0.1em;
+    }
+    .sub-title {
+      text-align: center;
+      margin-bottom: $base-line-height;
     }
     p {
       line-height: 1.7;

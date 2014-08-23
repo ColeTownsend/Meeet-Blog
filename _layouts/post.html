@@ -9,16 +9,20 @@
         </hgroup>
       </header>
       <article>
-        {% if page.categories contains 'cuts' %}
+        {% if page.categories contains 'top cuts' %}
           <img class="post-icon" src="{{ site.url }}/images/logos/meeet-party-logo.png" alt="Top Cuts!">
         {% endif %}
-        {% if page.categories contains 'updates' %}
+        {% if page.categories contains 'update' %}
           <img class="post-icon" src="{{ site.url }}/images/logos/meeet-update-logo.png" alt="Updates This Week">
         {% endif %}
+
+        <h1 class="sub-title">{{ page.sub_title }}</h1>
+
         {{ content }}
+
         <!-- Twitter -->
         <br>
-        <a href="https://twitter.com/share" class="twitter-share-button" data-via="meeetco" data-count="none" data-url="{{ site.url }}{{ post.url }}">Tweet</a>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="meeetco" data-count="none" data-url="{{ site.url }}{{ page.url }}">Tweet</a>
         {% if page.author == 'noah' %}
         <hr class="card-break">
         {% include noah-card.html %}
