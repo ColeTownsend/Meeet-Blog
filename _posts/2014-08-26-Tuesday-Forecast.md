@@ -21,7 +21,7 @@ Thanks to the Kelly Sutton and Layervault Team, we can offer the first few finis
 I've finished the sticker designs that will be with the $10 pledge and maybe a few lucky $5 pledges. <a href="https://www.kickstarter.com/projects/meeet/meeet-co-finish-your-side-projects-find-your-next/posts/960745">Check them out</a>.
 </blockquote>
 
-A few goals for the week ahead:
+## A few goals for the week ahead:
 
 1. Fully implement direct messages
 2. Re-implement "People"
