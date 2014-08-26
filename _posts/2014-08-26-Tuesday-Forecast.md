@@ -18,7 +18,7 @@ We've raised $1,163. That's more than a third of our goal, and we've been fundra
 Thanks to the Kelly Sutton and Layervault Team, we can offer the first few finished projects some awesome deals as they continue to develop.
 
 <h3><span class="update">Update</span>Stickers!</h3>
-I've finished the sticker designs that will be with the $10 pledge and maybe a few lucky $5 pledges.<a href="https://www.kickstarter.com/projects/meeet/meeet-co-finish-your-side-projects-find-your-next/posts/960745">Check them out</a>.
+I've finished the sticker designs that will be with the $10 pledge and maybe a few lucky $5 pledges. <a href="https://www.kickstarter.com/projects/meeet/meeet-co-finish-your-side-projects-find-your-next/posts/960745">Check them out</a>.
 </blockquote>
 
 A few goals for the week ahead:
