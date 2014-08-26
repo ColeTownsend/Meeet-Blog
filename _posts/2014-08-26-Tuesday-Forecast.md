@@ -23,7 +23,7 @@ I've finished the sticker designs that will be with the $10 pledge and maybe a f
 
 ## A few goals for the week ahead:
 
-1. Fully implement direct messages
-2. Re-implement "People"
-3. Secure 2 new discounts for the Teem
-4. Reach 60% of our Kickstarter goal
+- Fully implement direct messages
+- Re-implement "People"
+- Secure 2 new discounts for the Teem
+- Reach 60% of our Kickstarter goal
