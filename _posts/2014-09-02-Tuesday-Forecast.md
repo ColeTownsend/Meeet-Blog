@@ -1,14 +1,14 @@
 ---
 layout: post
-published: false
+published: true
+date: 2014-09-02
 title: Tuesday Update and Outlook
-sub_title: "Collaboratin'"
+sub_title: Collaboratin'
 category: update
+author: cole
 ---
 
-Hey guys! Thank you for continuing to bring in the dollar bills. We're doing excellent right now in our Kickstarter, and _we are going to meet our goal_. I think that Meeet would be able to offer much more however if we exceeded our goal. We want to help people ship side projects. 
-
-> Pledging on Kickstarter will ensure that everyone with an idea and a little know-how can work together to build something awesome. [Change the game.](https://twitter.com/intent/tweet?text=Meeet%20by%20Meeet%20Co&via=kickstarter&url=http://kck.st/1kYExFk&original_referer=https://www.kickstarter.com/projects/meeet/meeet-co-finish-your-side-projects-find-your-next)
+Hey guys! Thank you for continuing to bring in the dollar bills. We're doing excellent right now in our Kickstarter, and _we are going to meet our goal_. I think that Meeet would be able to offer much more however if we exceeded our goal. We want to help people ship side projects. Pledging on Kickstarter will ensure that everyone with an idea and a little know-how can work together to build something awesome. [Change the game.](https://twitter.com/intent/tweet?text=Meeet%20by%20Meeet%20Co&via=kickstarter&url=http://kck.st/1kYExFk&original_referer=https://www.kickstarter.com/projects/meeet/meeet-co-finish-your-side-projects-find-your-next)
 
 <blockquote>
 <h3><span class="milestone">Milestone</span>Total Pledges in Dollars: 1,445</h3>
