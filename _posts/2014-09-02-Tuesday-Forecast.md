@@ -2,7 +2,7 @@
 layout: post
 published: true
 date: 2014-09-02
-title: Tuesday Update and Outlook
+title: Update and Outlook #2
 sub_title: Collaboratin'
 category: update
 author: cole
