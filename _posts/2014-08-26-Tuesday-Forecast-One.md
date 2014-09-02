@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Tuesday Forecase 8/26
 sub_title: Thirty Six Percent
 date: 2014-08-26
 categories: update
