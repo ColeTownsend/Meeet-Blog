@@ -26,5 +26,5 @@ I've finished the sticker designs that will be with the $10 pledge and maybe a f
 
 - Fully implement direct messages
 - Re-implement "People"
-- Secure 2 new discounts for the Teem
+- Secure 2 new discounts for the Teeem
 - Reach 60% of our Kickstarter goal
