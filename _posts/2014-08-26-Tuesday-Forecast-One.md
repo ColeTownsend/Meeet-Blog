@@ -1,5 +1,6 @@
 ---
 layout: post
+title: "Update and Outlook #1"
 sub_title: Thirty Six Percent
 date: 2014-08-26
 categories: update
