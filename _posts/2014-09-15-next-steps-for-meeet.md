@@ -17,7 +17,7 @@ What we're going to do is instead have everyone's Twitter username attached to t
 ## Applications
 We are also aiming to alter the application process. 
 
-<img src="http://gtat.me/img/FIgzatNbqf.png">
+<img src="{{ site.url }}/images/inline/screenie-2014-09-15.png">
 
 Our initial idea was to require a statement from the applicant regarding their interest. This provides both an opportunity for the applicant to cancel their application and to show the depth of their interest. We're going to build that in during the next two weeks of transition while we get our new developer up to speed.
 
