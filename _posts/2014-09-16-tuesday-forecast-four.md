@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: "Update and Outlook #4"
 sub_title: Final Stretch!
 date: 2014-09-16
